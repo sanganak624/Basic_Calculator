@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         catch (Exception e)
         {
             fail2=true;
-            //Toast.makeText(MainActivity.this, "Invalid Input 2", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -118,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
         }
         catch (Exception e)
         {
-            //Toast.makeText(MainActivity.this, "Invalid Input 2", Toast.LENGTH_SHORT).show();
             fail1=true;
         }
     }
