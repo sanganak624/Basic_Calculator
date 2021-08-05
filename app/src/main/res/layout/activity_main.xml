@@ -8,23 +8,27 @@
 
     <EditText
         android:id="@+id/varOne"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Var1"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="numberSigned|numberDecimal"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@id/plus_Button"
         app:layout_constraintEnd_toStartOf="@id/varTwo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/plus_Button"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/varTwo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Var2"
+        android:inputType="numberSigned|numberDecimal"
+        android:text=""
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintBottom_toTopOf="@id/plus_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/varOne"
-        app:layout_constraintBottom_toTopOf="@id/plus_Button"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resultsView"
@@ -34,7 +38,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/plus_Button" />
 
@@ -52,7 +55,6 @@
         android:id="@+id/minus_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
         app:layout_constraintEnd_toStartOf="@id/multiply_Button"
@@ -63,7 +65,6 @@
         android:id="@+id/multiply_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:text="*"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
         app:layout_constraintEnd_toStartOf="@id/divide_Button"
@@ -79,5 +80,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/multiply_Button"
         app:layout_constraintTop_toBottomOf="@+id/varOne" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Number 1"
+        app:layout_constraintBottom_toTopOf="@+id/varOne"
+        app:layout_constraintEnd_toEndOf="@id/varOne"
+        app:layout_constraintStart_toStartOf="@id/varOne"
+/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Number 2"
+        app:layout_constraintBottom_toTopOf="@+id/varTwo"
+        app:layout_constraintEnd_toEndOf="@+id/varTwo"
+        app:layout_constraintStart_toStartOf="@+id/varTwo" />
+
 
 </android.support.constraint.ConstraintLayout>
