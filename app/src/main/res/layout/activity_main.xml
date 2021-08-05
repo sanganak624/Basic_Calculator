@@ -43,7 +43,8 @@
 
     <Button
         android:id="@+id/plus_Button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_height="wrap_content"
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
@@ -53,7 +54,8 @@
 
     <Button
         android:id="@+id/minus_Button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_height="wrap_content"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
@@ -63,7 +65,8 @@
 
     <Button
         android:id="@+id/multiply_Button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_height="wrap_content"
         android:text="*"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
@@ -73,7 +76,8 @@
 
     <Button
         android:id="@+id/divide_Button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_height="wrap_content"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/resultsView"
